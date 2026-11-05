@@ -1,0 +1,45 @@
+Buatkan sebuah aplikasi web satu halaman (Single Page Application - SPA) interaktif berbasis HTML, Tailwind CSS (via CDN), dan JavaScript murni untuk "Dapur Rasa Nusantara". 
+
+Aplikasi ini menggunakan Bahasa Indonesia secara penuh dan dirancang modern, responsif, serta siap dipamerkan dengan spesifikasi berikut:
+
+### 1. Struktur Navigasi & Header
+- Navigasi (Navbar) sticky di bagian atas dengan logo "Dapur Rasa Nusantara" (warna utama `#E53935`).
+- Opsi navigasi interaktif: Menu & Harga, Tentang Kami, Kontak, dan Tombol Keranjang Belanja 🛒 dengan badge indikator jumlah item otomatis.
+- Navigasi menyesuaikan mode (Pelanggan vs Admin Warung).
+
+### 2. Fitur Routing & Portal Masuk
+- Halaman Portal Utama dengan 2 pilihan gerbang masuk:
+  1. "Masuk Sebagai Pelanggan / User" (Membuka Katalog Menu).
+  2. "Masuk Sebagai Admin Warung" (Membuka Modal Validasi Login Admin).
+
+### 3. Katalog Menu & Fitur Filter (24 Menu Khas Indonesia)
+- Sediakan minimal 6 pilihan hidangan khas Indonesia untuk tiap kategori (total 24 menu):
+  * 🥗 Makanan Harian (Nasi Bogana, Nasi Liwet Solo, Nasi Campur Bali, Nasi Ulam Betawi, Nasi Gudeg Jogja, Nasi Krawu Gresik).
+  * 🥩 Tinggi Protein (Rendang Minang, Ayam Betutu Gilimanuk, Ikan Lais Bakar Dabu-Dabu, Sate Maranggi, Ayam Pop, Gurame Bakar Jimbaran).
+  * 🍄 Serba Sayur (Gado-Gado Betawi, Urap-Urap Jawa, Pecel Blitar, Plecing Kangkung, Tumis Genjer Tauco, Karedok Sunda).
+  * 🍹 Minuman Lokal (Es Cendol Dawet Ayu, Wedang Jahe Rempah, Es Kunyit Asam, Es Doger, Es Bir Pletok, Es Selendang Mayang).
+- Fitur pencarian menu real-time dan penyaringan (*filtering*) kategori secara dinamis.
+- Setiap kartu menu dilengkapi foto, deskripsi, informasi kalori (Kkal), harga (Rp), dan tombol "+ Keranjang".
+
+### 4. Fitur Keranjang Belanja & Kalkulator Otomatis
+- Panel samping (Drawer Panel) keranjang belanja yang muncul secara animasi.
+- Pengguna dapat menambah/mengurangi jumlah (*quantity*) atau menghapus item pesanan.
+- **Kalkulator Otomatis**:
+  * Menghitung Akumulasi Total Kalori (Kkal) secara real-time.
+  * Menghitung Total Harga (Rp) secara real-time.
+- Tombol "Kirim Pesanan via WhatsApp" yang menyusun ringkasan rincian pesanan secara otomatis.
+
+### 5. Halaman "Tentang Kami" (About Us)
+- Hero Banner dengan statistik interaktif (Menu Halal, Pelanggan Puas, Chef Berpengalaman).
+- Tab Cerita & Galeri Interaktif (Cerita Kami, Dapur Higienis, Tim Chef, Event Prasmanan).
+- Grid 4 Keunggulan Utama (Bahan Segar & Halal, Chef Berpengalaman, Pengiriman Tepat Waktu, Higienis & Clean).
+- Modal Pop-up Sertifikasi Interaktif (Sertifikat Halal MUI, Laik Higienis, Bebas Pengawet).
+
+### 6. Validasi & Dasbor Pengelolaan Admin
+- Pop-up Login Admin dengan sistem validasi sederhana (Username: `admin`, Password: `warung123`).
+- Dasbor Admin: Ringkasan finansial (Omzet Penjualan, Pengeluaran Bahan Baku, Member Katering), form input laporan harian baru, dan tabel catatan transaksi harian.
+
+### 7. Desain & Visual
+- Menggunakan Tailwind CSS v4 dan Google Fonts 'Poppins'.
+- Warna Tema: Merah Kuliner (`#E53935`), Merah Muda Soft (`#FF8A80`), dan Latar Belakang Off-White (`#F9F9F6`).
+- Tampilan responsif penuh untuk layar HP (Mobile) maupun Komputer (Desktop).v
